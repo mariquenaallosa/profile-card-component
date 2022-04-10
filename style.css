@@ -1,0 +1,139 @@
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+    background-color: var(--dark-cyan);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    overflow: hidden;
+    font-weight: 700;
+}
+
+.bg-img {
+    position: absolute;
+}
+
+ .bg-img--top {
+    top: -600px;
+    left: -220px;
+} 
+
+.bg-img--bottom {
+    bottom: -670px;
+    right: -220px;
+}
+
+.card {
+    position: relative;
+    top: 20vh;
+    width: 325px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#fff;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    overflow: hidden;
+}
+
+.card__header{
+    position: relative;
+    height:120px;
+    text-align: center;
+}
+.card__header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+}
+.card__header-profile {
+    position: absolute;
+    top:80px;
+    left: 110px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 5px solid #fff;
+    background-color: #fff;
+}
+ .card__body {
+     position: absolute;
+     top: 200px;
+     width: 100%;
+     height: 65px;
+     text-align: center;
+     border-bottom: 2px solid rgb(0 0 0 / 0.1);
+ }
+
+ .card__text {
+     margin:0em;
+     margin-bottom: 0.5em;
+ }
+
+
+ .card__text--ligth{
+     color: var(--dark-gray);
+     font-weight: lighter;
+ }
+
+ .card__footer {
+    position: absolute;
+    /* AJUSTE PARA QUE QUEDE IGUAL */
+    bottom: -67px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .card__stats {
+    display: inline-block;
+    margin: 0em 0.5em;
+    width: 70px;
+    text-align: center;
+  }
+
+  .card__text--small {
+    font-size: 8px;
+    letter-spacing: 2px;
+  }
+
+  .card__number {
+    margin-bottom: 0.3em;
+  }
+  .card__text--ligth-small{
+      font-size: 14px;
+  }
+
+
+@media only screen and (max-width:390px){
+    .bg-img--top {
+        top: -700px;
+        left: -650px;
+    } 
+    
+    .bg-img--bottom {
+        bottom: -700px;
+        right: -650px;
+    }
+    .card {
+        top: 20vh;
+        width: 335px;
+        height: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+    .card__text--small {
+        font-size: 11px;
+        letter-spacing: 1px;
+      }
+}
