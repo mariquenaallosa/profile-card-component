@@ -41,6 +41,9 @@ body {
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
     overflow: hidden;
+    box-shadow: 5px 3px 53px 6px rgba(0,0,0,0.42);
+    -webkit-box-shadow: 5px 3px 53px 6px rgba(0,0,0,0.42);
+    -moz-box-shadow: 5px 3px 53px 6px rgba(0,0,0,0.42);
 }
 
 .card__header{
